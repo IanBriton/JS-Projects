@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header.ejs')%>
+
+    <body>
+        <%- include('./partials/nav.ejs') %>
+
+            <div class="reviews content">
+                <h1>All Reviews</h1>
+                <% if(users.length > 0) { %>
+                    <% users.forEach(user => { %>
+                        <a class="single" href="/myusers/<%= user._id%>">
+                            <h1 class="username">
+                                <%= user.username %>
+                            </h1>
+                            <h3 class="email">
+                                <%= user.email %>
+                            </h3>
+                            <p class="body">
+                                <%= user.body %>
+                            </p>
+                        </a>
+                        <% }) %>
+                            <% } else { %>
+                                <p>No reviews from the user</p>
+                                <% }%>
+            </div>
+            <%- include('./partials/footer.ejs') %>
+    </body>
+
+</html>

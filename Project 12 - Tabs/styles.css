@@ -1,0 +1,111 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(228, 236, 247);
+}
+.main-section h1 {
+  height: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  opacity: 0.85;
+  margin: 2.5em 0em 0em 1em;
+}
+.main-section P {
+  text-align: center;
+  margin: 1.5em;
+  opacity: 0.7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3em;
+}
+.main-section img {
+  height: 30vh;
+  width: 90vw;
+  border-radius: 10px;
+  margin: 1em;
+}
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  margin: 1em;
+  border-radius: 10px;
+  background: red;
+}
+.tabs-header {
+  display: flex;
+  flex-direction: row;
+  /* margin: 1em 1em 0em 1em; */
+  border-radius: 10px 10px 0px 0px;
+  background: rgb(153, 153, 153);
+}
+.tabs-title {
+  height: 2em;
+  width: 8.5em;
+  text-align: center;
+  padding: 0.4em;
+}
+.tabs-title:hover {
+  background: rgb(228, 236, 247);
+  color: rgb(117, 204, 204);
+  transform: translateY(-10px) scale(1);
+  transition: all linear 0.3s;
+}
+.tabs-title:active {
+  color: black;
+  background: white;
+}
+.tabs-details {
+  background: white;
+  color: black;
+  border-radius: 0px 0px 10px 10px;
+}
+.tabs-details h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  margin: 1em 0em 0em 1em;
+}
+#tabs-data {
+  text-align: left;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 756px) {
+  .main-section {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* background: rebeccapurple; */
+  }
+  .section-data {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 35em);
+    /* grid-gap: 1em; */
+    /* margin-left: 4em; */
+  }
+  .section-data img {
+    height: 19em;
+    width: 33em;
+  }
+  .tabs-container {
+    width: 90%;
+    min-height: 10em;
+    border-radius: 100px;
+  }
+  .tabs-title {
+    height: 2em;
+    width: 10.5em;
+    font-size: 1.5em;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .tabs-details {
+    border-radius: 0px 0px 10px 10px;
+  }
+}

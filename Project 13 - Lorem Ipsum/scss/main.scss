@@ -1,0 +1,86 @@
+@import "./resets";
+@import "./variables";
+
+@mixin flexCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  gap: 2em;
+}
+
+body {
+  background: $background;
+}
+
+.main {
+  @include flexCenter(column);
+  width: 40%;
+  margin: 5em auto;
+
+  .form-container {
+    width: 70%;
+    margin: 1em 2em;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-family;
+    // background-color: red;
+  }
+  .form-container #label {
+    font-family: $font-family;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 0.3em;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-left: 2em;
+  }
+  .form-container input {
+    height: 2em;
+    width: 5em;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background: white;
+    // margin: 0.4em;
+    // padding: 0.5em;
+    // font-size: 2em;
+  }
+  .btn-click {
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 0.2em;
+    height: 2em;
+    padding-top: 0.2 em;
+    width: 8em;
+    font-size: 0.9em;
+    background: $secondary-color;
+    border: none;
+    border-color: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all linear 0.5s;
+    // font-weight: bold;
+  }
+  .btn-click:hover {
+    color: white;
+    background: $secondary-color;
+    cursor: pointer;
+  }
+  .paragraph-content {
+    @include flexCenter(column);
+    margin-top: 2em;
+    line-height: 1.4em;
+    text-align: center;
+    font-weight: 100;
+    opacity: 0.8;
+    font-family: "Courier New", Courier, monospace;
+  }
+}
+.main h1 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  margin: 1em;
+}
+.results {
+  margin-top: 2em;
+}

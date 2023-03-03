@@ -1,0 +1,91 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+
+.main {
+  width: 90vw;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-rows: repeat(2, 0.5fr);
+  grid-gap: 0.5rem;
+  overflow: hidden;
+}
+.main__header-container {
+  height: 9rem;
+  width: 100vw;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main__header-container-search-bar input {
+  height: 2rem;
+  background: rgb(189, 195, 195);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-transform: capitalize;
+  font-family: "Courier New", Courier, monospace;
+}
+.main__header-container .nav {
+  display: flex;
+  flex-direction: column;
+}
+.main__header-container .nav h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.main__header-container .nav .menu__nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0.4rem;
+}
+.main__header-container .nav .menu__nav-item {
+  height: 1.2rem;
+  width: 5rem;
+  text-transform: capitalize;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  border: none;
+  background: white;
+  color: rgb(189, 195, 195);
+}
+.main__header-container .nav .menu__nav-item:hover {
+  color: black;
+  cursor: pointer;
+}
+.main__image-container {
+  display: grid;
+}
+.main__image-container img {
+  margin: 2rem 0em;
+  height: 18rem;
+  width: 90vw;
+  border-radius: 1rem;
+}
+.main__image-container #title {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0.5rem auto;
+  color: rgb(189, 195, 195);
+}
+.main__image-container #price {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=main.css.map */

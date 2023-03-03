@@ -1,0 +1,121 @@
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white
+}
+.nav-container{
+    height: 5em;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+}
+.nav-container h2{
+    font-weight: bold;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 1.5em 0em .4em 0em ;
+    opacity: .8;
+}
+.horizontal-line{
+    height: 20em;
+    width: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding: .2em;
+    background: saddlebrown;
+    opacity: .8;
+    /* color: yellow; */
+}
+.menu-filter{
+    width: 30%;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    border: 2px soild saddlebrown;
+    border-radius: 8px;
+    
+}
+.btn-filter{
+    height: 2em;
+    max-width: 30%;
+    font-size: 1em;
+    text-transform: capitalize;
+    font-weight: bold;
+    opacity: .7;
+    border: 2px solid saddlebrown;
+    padding: .4em;
+    border-radius: 5px;
+    transition: transform;
+    transition: all linear .5s;
+}
+.btn-filter:hover{
+    cursor: pointer;
+    /* transform: scale(1.2); */
+    background: saddlebrown;
+    color: white;
+}
+.img{
+    height: 10em;
+    width: 13em ;
+    float: left;
+    margin: 1em;
+    border: 5px solid rgb(209, 137, 85);
+    /* opacity: .8; */
+    border-radius: 10px;
+}
+.section{
+    margin: 8em 3em 5em 3em;
+    /* background-color: cyan; */
+}
+.div-container{
+    display: grid;
+    grid-gap: 1em;
+    padding: 1em;
+    margin: 1em;
+}
+.inside-divs div{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    margin: .8em;
+    /* background: blue; */
+    /* text-decoration: underline; */
+}
+.inside-divs div>p{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+}
+.inside-divs>p{
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 1.5em;
+}
+.value{
+    color: saddlebrown;
+}
+.underline{
+    /* background: saddlebrown; */
+    border: .5px solid rgb(51, 48, 46);
+    border-style: dotted;
+    opacity: .7;
+}
+@media screen and (min-width: 600px) {
+    .div-container{
+        display: grid;
+        grid-template-columns: repeat(2, 35em);
+        grid-template-rows: repeat(5, 12em);
+        grid-gap: 1em;
+        margin-left: 10em;
+        margin-right: auto;
+    }
+    
+}

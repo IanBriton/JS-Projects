@@ -1,0 +1,89 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  background: #222;
+  color: white;
+}
+.header {
+  height: 12rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5em 0.6em 5rem 0.6em;
+  border-bottom: 5px solid white;
+}
+.btn {
+  font-size: 0.8em;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  padding: 0.2em;
+}
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease-in-out 0.5s;
+}
+.current-score {
+  text-align: center;
+  height: 2em;
+  padding: 0.4em;
+  /* margin: 10rem; */
+  width: 4em;
+  background: white;
+  color: black;
+  display: block;
+  margin: 6rem auto;
+  position: absolute;
+  top: 9.5%;
+  right: 43%;
+}
+.guess-number p {
+  text-align: center;
+  margin: 5rem auto;
+}
+.input-space {
+  display: flex;
+  justify-content: space-between;
+}
+.user-input {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* background: red; */
+}
+.user-input input {
+  margin: 1rem auto;
+  padding: 0.5rem;
+  font-size: 2rem;
+  width: 6rem;
+  height: 4rem;
+  text-align: center;
+}
+.user-input .btn {
+  margin: 2rem auto;
+  padding: 0.5rem;
+  width: 4rem;
+  font-size: 0.5em;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  padding: 0.2em;
+}
+.score-board {
+  display: flex;
+  /* background: yellow; */
+  width: 50%;
+  flex-direction: column;
+  gap: 1rem;
+}
+.message {
+  margin-bottom: 2rem;
+}

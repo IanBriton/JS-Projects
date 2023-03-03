@@ -1,0 +1,193 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  height: 6em;
+  width: 100%;
+  /* background: red; */
+  position: fixed;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-container img {
+  height: 3em;
+  width: 4em;
+  margin: 1.3em;
+}
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  /* padding: 1em; */
+  margin: 2em;
+  /* background: blue; */
+}
+.nav-links a {
+  text-decoration: none;
+  display: inline;
+  padding: 0.7em;
+  font-size: 1.5em;
+  color: white;
+  letter-spacing: 0.1em;
+}
+.main-section {
+  background-image: url(./Images/img-1.avif);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-main {
+  height: 60vh;
+  width: 99vw;
+  /* background: blue; */
+  position: absolute;
+  top: 7em;
+  /* margin: 3em; */
+}
+.section-main div {
+  margin: 15em auto 5em 5em;
+  padding: 1em;
+}
+/* .section-1 div {
+  position: absolute;
+  top: 7em;
+} */
+
+.section-main div > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.5em;
+  color: white;
+  letter-spacing: 0.2em;
+}
+.section-main p {
+  /* margin-left: auto; */
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+}
+.btn {
+  height: 3em;
+  width: 10em;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background: none;
+  display: block;
+  margin: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid white;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.back-to-top {
+  font-size: 2em;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  color: rgb(52, 223, 151);
+  position: absolute;
+  top: 100;
+  right: 0;
+  transition: all linear 0.5s;
+}
+.back-to-top:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.section-2,
+.section-3,
+.section-4 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+}
+.section-2 h1,
+.section-3 h1,
+.section-4 h1 {
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 0.3em;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  margin: 1em;
+}
+.inside-divs {
+  margin-left: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, 20em);
+  grid-template-rows: repeat(1, 18em);
+  grid-gap: 4em;
+  /* background: cyan; */
+}
+.divs {
+  height: 5em;
+  width: 10em;
+  background: red;
+}
+.inside-divs img {
+  height: 15em;
+  width: 20em;
+  border-radius: 5px;
+}
+.inside-divs p {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 5em;
+  /* background: green; */
+}
+.inside-divs p > span {
+  color: rgb(37, 201, 132);
+  font-size: 1.5em;
+  padding: 1em;
+  font-weight: bold;
+  text-decoration: wavy;
+}
+.footer {
+  height: 15vh;
+  background: rgb(173, 173, 185);
+}
+.social-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.social-btns button {
+  height: 2em;
+  width: 2em;
+  font-size: 2em;
+  border: none;
+  border-radius: 50%;
+  padding: 0.2em;
+  color: rgb(173, 173, 185);
+  transition: all linear 0.3s;
+  margin: 0.5em;
+  margin-top: 0.7em;
+}
+.social-btns button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: grey;
+  transform: scale(1.2);
+}
+.footer p {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  opacity: 0.9;
+}

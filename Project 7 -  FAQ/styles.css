@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+*, ::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(247,247,250);
+}
+.main h2{
+    font-family: 'Ms Madi', cursive;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: saddlebrown;
+    opacity: .8;
+    margin: 2em;
+}
+.main-div-container{
+    height: 30vh;
+    width: 70%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto ;
+    /* border: 2px solid black;
+    background: rebeccapurple; */
+    /* align-items: center; */
+}
+.div-container{
+    height: 3em;
+    width:70vw;
+    margin: 1.5em 1em 0em .8em ;
+    padding: .8em;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+.div-container p{
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: .8;
+    letter-spacing: .11em;
+}
+.btn{
+    color: saddlebrown;
+    border: none;
+    font-size: 1.4em;
+    /* transition: transform; */
+    transition: all linear .2s;
+}
+.btn:hover{
+    transform: rotate(90deg);
+    cursor: pointer;
+}

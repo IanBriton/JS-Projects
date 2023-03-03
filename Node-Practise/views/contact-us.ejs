@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header.ejs')%>
+
+    <body>
+        <%- include('./partials/nav.ejs') %>
+
+            <div class="contact-us content">
+                <form action="/myusers" method="post">
+                    <label for="username">Enter your username:</label>
+                    <input type="text" name="username" id="username" required />
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required />
+                    <label for="body">Type your message here:</label>
+                    <textarea rows="" cols="" name="body" id="body" required></textarea>
+                    <button>Submit</button>
+                </form>
+            </div>
+            <%- include('./partials/footer.ejs') %>
+    </body>
+
+</html>

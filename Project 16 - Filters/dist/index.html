@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="script.js"></script>
+    <title>Filters</title>
+  </head>
+  <body>
+    <section class="main">
+      <div class="main__header-container">
+        <form id="form" class="main__header-container-search-bar">
+          <input
+            type="search"
+            name="search-query"
+            id="q"
+            placeholder="search..."
+          />
+        </form>
+        <nav class="nav">
+          <h2>Company</h2>
+          <div class="menu__nav">
+            <button class="menu__nav-item" data-id="All">All</button>
+            <button class="menu__nav-item" data-id="Ikea">Ikea</button>
+            <button class="menu__nav-item" data-id="Marcos">Marcos</button>
+            <button class="menu__nav-item" data-id="Caressa">Caressa</button>
+            <button class="menu__nav-item" data-id="Liddy">Liddy</button>
+          </div>
+        </nav>
+      </div>
+      <div class="main__image-container">
+        <img src="./Images/Accent-Chair.jpeg" alt="" />
+        <h3 id="title">Accent-Chair</h3>
+        <p id="price">9.99</p>
+      </div>
+    </section>
+  </body>
+</html>
